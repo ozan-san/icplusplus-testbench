@@ -28,9 +28,9 @@ module testbench_icplusplus;
     // At 5, 15, 25, Clock RISES 
     // At 10, 20, 30, .. Clock FALLS
    initial clk = 0;
-	always #5 clk = ~clk;
+   always #5 clk = ~clk;
     
-	initial begin
+   initial begin
 		$monitor("TIME=%t | d0=%b f0=%b d1=%b f1=%b | Q0=%b Y=%b Q1=%b",
 					 $time,    d0,   f0,   d1,   f1,     q0,   y,   q1);
 		// Initialize Inputs
@@ -47,7 +47,7 @@ module testbench_icplusplus;
 		#10; // t=15, clock FALLS
 		//There should be no change!
 		if (q0 != 
-	end
+    end
       
 endmodule
 
