@@ -32,7 +32,7 @@ module testbench_icplusplus;
     
    initial begin
 		$monitor("TIME=%t | d0=%b f0=%b d1=%b f1=%b | Q0=%b Y=%b Q1=%b",
-					 $time,    d0,   f0,   d1,   f1,     q0,   y,   q1);
+                          $time,    d0,   f0,   d1,   f1,     q0,   y,   q1);
 		// Initialize Inputs
 		d0 = 0;
 		f0 = 0;
