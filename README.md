@@ -1,5 +1,7 @@
 # icplusplus-testbench
-A testbench created for HW3-2019 for CENG232 - Logic Design class.
+A testbench created for HW3-2019 for CENG232 - Logic Design class.  
+This testbench is intended for use with icplusplus module, not with DF module.  
+Given DF testbench is good enough for that purpose.  
 
 ## Properties
 + Rising clocks at every 6n+3 nanoseconds
@@ -32,7 +34,20 @@ __Be very cautious with timing. Errors in timing are hard to find and fix.__
 
 ## Q: The code does not compile, why?
 Check:
-+ You have named your modulename, and variables correctly, as specified in the PDF
++ You have named your modulename, and variables correctly, as specified in the PDF.  
+Your modules in lab3_1.v file should look something like this:
+```verilog
+    module df(...);
+        ...
+        // Your code for DF module goes here.
+        ...
+    endmodule
+    module icplusplus(...);
+        ...
+        // Your code for icplusplus module goes here.
+        ...
+    endmodule
+```
 + Check your syntax again
 + If there's nothing wrong with your syntax, try to run the code in an inek machine. Some OS's, especially *Mindovz*, is known to cause problems.
 
